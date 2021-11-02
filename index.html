@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Frontend Mentor | Article preview component</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="flex body">
+    <main class="container main flex bg-white">
+      <section><img src="./images/drawers.jpg" class="drawers" /></section>
+      <div>
+        <section class="section-main">
+          <h1 class="h1-main text-dark">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h1>
+          <p class="p-body fs-300 text-accent">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+        </section>
+        <section class="flex section-michelle">
+          <img src="./images/avatar-michelle.jpg" class="michelle" />
+          <div>
+            <h1 class="h1-michelle fs-300 text-dark">Michelle Appleton</h1>
+            <p class="p-michelle fs-300 text-accent">28 Jun 2020</p>
+          </div>
+          <div class="div-btn">
+            <button class="btn" onclick="share()" >
+              <img
+                src="./images/icon-share.svg"
+                class="share"
+              />
+            </button>
+            <div id="popup" style="opacity: 0;" class="share-active flex">
+              <p class="fs-300">SHARE</p>
+              <img class="share-icon" src="./images/icon-facebook.svg" />
+              <img class="share-icon" src="./images/icon-twitter.svg" />
+              <img class="share-icon" src="./images/icon-pinterest.svg" />
+                <div id="triangle"></div>
+            </div>
+            
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="share.js"></script>
+  </body>
+  <footer class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      >Frontend Mentor</a
+    >. Coded by
+    <a href="https://www.frontendmentor.io/profile/whoamihealay">Andrew</a>.
+  </footer>
+</html>
