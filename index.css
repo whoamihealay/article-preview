@@ -243,13 +243,6 @@ select {
   border-top-right-radius: var(--border-rad);
 }
 
-@media screen and (max-width: 875px) {
-  .drawers {
-    max-height: 14rem;
-    width: 100%;
-  }
-}
-
 .section-main {
   margin: 1em 0;
   padding-inline: 1em;
@@ -268,6 +261,8 @@ select {
 .section-michelle {
   margin: 1em 0;
   padding-inline: 1em;
+  position: relative;
+  align-items: center;
 }
 
 .michelle {
@@ -294,7 +289,6 @@ select {
 
 .div-btn {
   margin-left: auto;
-  position: relative;
 }
 
 .btn {
@@ -321,10 +315,9 @@ select {
   align-items: center;
   color: var(--clr-gray-blue);
   letter-spacing: 0.225rem;
-  width: 375px;
-  height: 5rem;
-  left: -19rem;
-  bottom: -1rem;
+
+  width: 100%;
+
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
@@ -333,24 +326,16 @@ select {
 /* Media Queries */
 /* ############# */
 
-@media screen and (min-width: 700px) {
-  .share-active {
-    width: 15.4rem;
-    height: 3rem;
-    border-radius: 0.6rem;
-    left: -11.9rem;
-    bottom: 4rem;
+@media screen and (max-width: 875px) {
+  .drawers {
+    max-height: 14rem;
+    width: 100%;
   }
 
-  #triangle {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 15px solid var(--clr-dark-gray-blue);
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    top: 100%;
-    left: 78%;
+  .share-active {
+    left: 0;
+    bottom: -1em;
+    height: 5rem;
   }
 }
 
@@ -373,7 +358,11 @@ select {
   }
 
   .share-active {
-    left: -6.9rem;
+    width: 15.4rem;
+    height: 3rem;
+    border-radius: 0.6rem;
+    bottom: 4rem;
+    right: -4.1rem;
   }
 
   .share-icon {
@@ -382,6 +371,13 @@ select {
   }
 
   #triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 15px solid var(--clr-dark-gray-blue);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    top: 100%;
     left: 45%;
   }
 }
