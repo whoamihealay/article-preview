@@ -17,24 +17,16 @@
     />
     <link rel="stylesheet" href="index.css" />
     <title>Frontend Mentor | Article preview component</title>
-
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body class="flex body">
     <main class="container main flex bg-white">
-      <section><img src="./images/drawers.jpg" class="drawers" /></section>
+      <section>
+        <img
+          class="drawers"
+          src="./images/drawers.jpg"
+          alt="Picture of drawers with a plant on top"
+        />
+      </section>
       <div>
         <section class="section-main">
           <h1 class="h1-main text-dark">
@@ -48,37 +40,50 @@
           </p>
         </section>
         <section class="flex section-michelle">
-          <img src="./images/avatar-michelle.jpg" class="michelle" />
+          <img
+            class="michelle"
+            src="./images/avatar-michelle.jpg"
+            alt="Picture of Michelle"
+          />
           <div>
             <h1 class="h1-michelle fs-300 text-dark">Michelle Appleton</h1>
             <p class="p-michelle fs-300 text-accent">28 Jun 2020</p>
           </div>
           <div class="div-btn">
-            <button class="btn" onclick="share()" >
-              <img
-                src="./images/icon-share.svg"
-                class="share"
-              />
+            <button class="btn" onclick="share()">
+              <span class="sr-only">share</span>
+              <img class="share" src="./images/icon-share.svg" alt="share" />
             </button>
-            <div id="popup" style="opacity: 0;" class="share-active flex">
+            <div id="popup" style="opacity: 0" class="share-active flex">
               <p class="fs-300">SHARE</p>
-              <img class="share-icon" src="./images/icon-facebook.svg" />
-              <img class="share-icon" src="./images/icon-twitter.svg" />
-              <img class="share-icon" src="./images/icon-pinterest.svg" />
-                <div id="triangle"></div>
+              <img
+                class="share-icon"
+                src="./images/icon-facebook.svg"
+                alt="facebook icon"
+              />
+              <img
+                class="share-icon"
+                src="./images/icon-twitter.svg"
+                alt="twitter icon"
+              />
+              <img
+                class="share-icon"
+                src="./images/icon-pinterest.svg"
+                alt="pinterest icon"
+              />
+              <div id="triangle"></div>
             </div>
-            
           </div>
         </section>
       </div>
     </main>
     <script src="share.js"></script>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/whoamihealay">Andrew</a>.
+    </footer>
   </body>
-  <footer class="attribution">
-    Challenge by
-    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-      >Frontend Mentor</a
-    >. Coded by
-    <a href="https://www.frontendmentor.io/profile/whoamihealay">Andrew</a>.
-  </footer>
 </html>

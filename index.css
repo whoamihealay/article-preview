@@ -1,6 +1,19 @@
-/* ***** */
-/* VARS */
-/* ***** */
+/* ################# */
+/* Table of Contents */
+/* ################# */
+
+/* 
+I   - VARS
+II  - RESET
+III - UTILITIES
+IV  - MAIN
+V   - MEDIA QUERIES
+VI  - FOOTER
+*/
+
+/* ########## */
+/*    VARS    */
+/* #########" */
 
 :root {
   /* Primary */
@@ -27,9 +40,9 @@
   --line-height: 1.5;
 }
 
-/* ***** */
-/* Reset */
-/* ***** */
+/* ########## */
+/*    RESET   */
+/* #########" */
 
 *,
 *::before,
@@ -77,8 +90,8 @@ a {
 
 body {
   font-family: var(--ff-sans-normal);
-  font-size: var(--fs-400);
-  color: var(--clr-black);
+  font-size: var(--fs-400, 1.125rem);
+  color: var(--clr-black, black);
   background-color: var(--clr-light-gray-blue);
   line-height: var(--line-height);
   min-height: 100vh;
@@ -113,9 +126,9 @@ select {
   }
 }
 
-/* ********* */
+/* ######### */
 /* UTILITIES */
-/* ********* */
+/* ######### */
 
 /* General utils */
 
@@ -207,9 +220,9 @@ select {
   font-size: var(--fs-200);
 }
 
-/* ***** */
-/* STYLE */
-/* ***** */
+/* ########## */
+/*    Main    */
+/* #########" */
 
 .body {
   align-items: center;
@@ -234,30 +247,30 @@ select {
 }
 
 .section-main {
-  margin: 1rem 0;
-  padding-inline: 1rem;
+  margin: 1em 0;
+  padding-inline: 1em;
 }
 
 .h1-main {
   font-weight: 700;
   font-size: var(--fs-300);
-  padding: 0.5rem 1rem;
+  padding: 0.5em 1em;
 }
 
 .p-body {
-  padding: 0.5rem 1rem;
+  padding: 0.5em 1em;
 }
 
 .section-michelle {
-  margin: 1rem 0;
-  padding-inline: 1rem;
+  margin: 1em 0;
+  padding-inline: 1em;
 }
 
 .michelle {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  margin-left: 1rem;
+  margin-left: 1em;
 }
 
 .h1-michelle {
@@ -266,7 +279,7 @@ select {
 
 .h1-michelle,
 .p-michelle {
-  padding: 0 0.5rem;
+  padding: 0 0.5em;
 }
 
 .btn {
@@ -281,7 +294,7 @@ select {
 }
 
 .btn {
-  margin-right: 1.5rem;
+  margin-right: 1.5em;
   position: relative;
   z-index: 1000;
 }
@@ -300,7 +313,7 @@ select {
   background-color: var(--clr-dark-gray-blue);
   position: absolute;
   justify-content: flex-start;
-  padding-left: 2rem;
+  padding-left: 2em;
   align-items: center;
   color: var(--clr-gray-blue);
   letter-spacing: 0.225rem;
@@ -311,6 +324,10 @@ select {
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
+
+/* ############# */
+/* Media Queries */
+/* ############# */
 
 @media screen and (min-width: 700px) {
   .share-active {
@@ -362,4 +379,20 @@ select {
   #triangle {
     left: 45%;
   }
+}
+
+/* ########## */
+/*   FOOTER   */
+/* #########" */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
