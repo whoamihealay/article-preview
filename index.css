@@ -241,9 +241,13 @@ select {
 .drawers {
   border-top-left-radius: var(--border-rad);
   border-top-right-radius: var(--border-rad);
-  object-fit: cover;
-  height: 12.5rem;
-  width: 100%;
+}
+
+@media screen and (max-width: 875px) {
+  .drawers {
+    max-height: 14rem;
+    width: 100%;
+  }
 }
 
 .section-main {
@@ -357,10 +361,11 @@ select {
   }
 
   .drawers {
-    height: 100%;
-    width: 46rem;
     border-top-right-radius: 0;
     border-bottom-left-radius: var(--border-rad);
+    max-width: 18rem;
+    object-fit: cover;
+    object-position: left;
   }
 
   .h1-main {
